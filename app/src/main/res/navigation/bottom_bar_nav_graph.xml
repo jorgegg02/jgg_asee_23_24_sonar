@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_bar_nav_graph"
+    app:startDestination="@id/catalogFragment">
+
+
+    <action
+        android:id="@+id/action_catalogFragment_to_productFragment"
+        app:destination="@id/productFragment" />
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="es.unex.asee.mercapp.view.home.CatalogFragment"
+        android:label="@string/catalog_option"
+        tools:layout="@layout/fragment_catalog" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="es.unex.asee.mercapp.view.home.CartFragment"
+        android:label="@string/cart_option"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="es.unex.asee.mercapp.view.home.UserFragment"
+        android:label="@string/user_option"
+        tools:layout="@layout/fragment_user" />
+
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="es.unex.asee.mercapp.view.home.ProductFragment"
+        android:label="@string/product_option"
+        tools:layout="@layout/fragment_product" >
+    <argument
+        android:name="subcategory"
+        app:argType="es.unex.asee.mercapp.data.model.GenericCategory" />
+    </fragment>
+
+
+</navigation>

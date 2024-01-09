@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Array de entradas para la preferencia de pronombres -->
+    <string-array name="pronouns_entries">
+        <item>He/Him</item>
+        <item>She/Her</item>
+        <item>They/Them</item>
+        <!-- Agrega más pronombres según sea necesario -->
+    </string-array>
+
+    <!-- Array de valores correspondientes a cada pronombre -->
+    <string-array name="pronouns_values">
+        <item>he</item>
+        <item>she</item>
+        <item>they</item>
+        <!-- Ajusta los valores según sea necesario -->
+    </string-array>
+
+</resources>

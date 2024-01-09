@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    app:backgroundT="@color/Verde_muy_claro"
+
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/login_header">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="rememberme"
+            android:title="@string/autologin_title" />
+        <EditTextPreference
+            android:defaultValue="Jorgito"
+            android:key="username"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:title="@string/username_title"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="12345"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:title="@string/password_title"
+            app:key="password"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/notificacions_header">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="sorting"
+            android:title="@string/notifications_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/pronouns_header">
+
+        <!-- Agrega aquí la preferencia para seleccionar los pronombres -->
+        <!-- Puedes utilizar una ListPreference para esto -->
+        <ListPreference
+            android:key="pronouns"
+            android:title="@string/pronouns_title"
+            android:defaultValue="he"
+            android:entries="@array/pronouns_entries"
+            android:entryValues="@array/pronouns_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/logout_header">
+
+        <Preference
+            android:key="logout"
+            android:title="@string/logout_title" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

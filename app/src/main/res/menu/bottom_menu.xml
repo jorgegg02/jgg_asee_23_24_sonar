@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/catalogFragment"
+        android:enabled="true"
+        android:icon="@drawable/catalog_24"
+        android:title="@string/catalog_option"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cartFragment"
+        android:enabled="true"
+        android:icon="@drawable/shopping_cart"
+        android:title="@string/cart_option"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/userFragment"
+        android:enabled="true"
+        android:icon="@drawable/user_24"
+        android:title="@string/user_option"
+        app:showAsAction="ifRoom" />
+</menu>
